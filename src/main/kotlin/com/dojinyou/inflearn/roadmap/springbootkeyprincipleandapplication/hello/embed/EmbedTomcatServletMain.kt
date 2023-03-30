@@ -4,8 +4,6 @@ import com.dojinyou.inflearn.roadmap.springbootkeyprincipleandapplication.hello.
 import org.apache.catalina.connector.Connector
 import org.apache.catalina.startup.Tomcat
 
-class EmbedTomcatServletMain
-
 fun main() {
     println("EmbedTomcatServletMain.main")
 

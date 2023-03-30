@@ -43,7 +43,7 @@ dependencies {
 // Jar 생성
 task buildJar(type: Jar) {
     manifest {
-        attributes 'Main-Class' : 'hello.embed.EmbedTomcatServletMain'
+        attributes 'Main-Class' : 'com.dojinyou.inflearn.roadmap.springbootkeyprincipleandapplication.hello.embed.EmbedTomcatServletMainKt'
     }
     with jar
 }

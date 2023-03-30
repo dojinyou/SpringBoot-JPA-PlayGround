@@ -18,7 +18,7 @@ class AppInitV3SpringMvc : WebApplicationInitializer {
         val dispatcherServlet = DispatcherServlet(appContext)
 
         // 디스패처 서블릿을 서블릿 컨테이너에 등록
-        val servlet = servletContext?.addServlet("dispatcherV3", dispatcherServlet)
+        val servlet = servletContext.addServlet("dispatcherV3", dispatcherServlet)
         servlet?.addMapping("/")
     }
 }
