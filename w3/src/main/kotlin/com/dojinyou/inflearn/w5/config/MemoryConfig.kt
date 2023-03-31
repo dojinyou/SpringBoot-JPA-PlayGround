@@ -2,10 +2,13 @@ package com.dojinyou.inflearn.w5.config
 
 import com.dojinyou.inflearn.MemoryController
 import com.dojinyou.inflearn.MemoryFinder
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
 
 @Configuration
+// @Conditional(value = [MemoryCondition::class])
+@ConditionalOnProperty(name = ["memory"], havingValue = "on")
 class MemoryConfig {
 
     @Bean
