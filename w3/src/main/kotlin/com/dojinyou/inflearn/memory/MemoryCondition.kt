@@ -1,4 +1,4 @@
-package com.dojinyou.inflearn
+package com.dojinyou.inflearn.memory
 
 import org.springframework.context.annotation.Condition
 import org.springframework.context.annotation.ConditionContext

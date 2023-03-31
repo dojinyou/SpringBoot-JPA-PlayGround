@@ -1,7 +1,7 @@
 package com.dojinyou.inflearn.w5.config
 
-import com.dojinyou.inflearn.MemoryController
-import com.dojinyou.inflearn.MemoryFinder
+import com.dojinyou.inflearn.memory.MemoryController
+import com.dojinyou.inflearn.memory.MemoryFinder
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration

@@ -1,4 +1,4 @@
-package com.dojinyou.inflearn
+package com.dojinyou.inflearn.memory
 
 import jakarta.annotation.PostConstruct
 import org.tinylog.kotlin.Logger

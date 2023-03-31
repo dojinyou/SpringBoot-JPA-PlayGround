@@ -1,4 +1,4 @@
-package com.dojinyou.inflearn
+package com.dojinyou.inflearn.memory
 
 class Memory(
     val used: Long,

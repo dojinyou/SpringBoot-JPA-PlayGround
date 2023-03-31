@@ -1,4 +1,4 @@
-package com.dojinyou.inflearn
+package com.dojinyou.inflearn.memory
 
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RestController
