@@ -1,7 +1,6 @@
-package com.dojinyou.inflearn.w5.config
+package com.dojinyou.inflearn.w3.config
 
 import org.assertj.core.api.Assertions
-import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.context.SpringBootTest

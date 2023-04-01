@@ -1,4 +1,4 @@
-package com.dojinyou.inflearn.w5
+package com.dojinyou.inflearn.w3
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication

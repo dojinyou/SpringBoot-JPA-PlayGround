@@ -1,4 +1,4 @@
-package com.dojinyou.inflearn.w5.member
+package com.dojinyou.inflearn.w3.member
 
 import org.springframework.jdbc.core.BeanPropertyRowMapper
 import org.springframework.jdbc.core.JdbcTemplate

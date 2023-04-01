@@ -1,4 +1,4 @@
-package com.dojinyou.inflearn.w5.config
+package com.dojinyou.inflearn.w3.config
 
 import com.zaxxer.hikari.HikariDataSource
 import org.springframework.context.annotation.Bean

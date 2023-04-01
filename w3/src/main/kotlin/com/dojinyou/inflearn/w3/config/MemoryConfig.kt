@@ -1,4 +1,4 @@
-package com.dojinyou.inflearn.w5.config
+package com.dojinyou.inflearn.w3.config
 
 import com.dojinyou.inflearn.memory.MemoryController
 import com.dojinyou.inflearn.memory.MemoryFinder
