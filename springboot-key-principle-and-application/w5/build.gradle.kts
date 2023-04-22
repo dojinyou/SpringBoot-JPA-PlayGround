@@ -23,6 +23,7 @@ dependencies {
 
     // spring
     implementation("org.springframework.boot:spring-boot-starter")
+    implementation("org.springframework.boot:spring-boot-starter-validation")
 
     // logging
     implementation("org.tinylog:tinylog-impl:2.6.1")
