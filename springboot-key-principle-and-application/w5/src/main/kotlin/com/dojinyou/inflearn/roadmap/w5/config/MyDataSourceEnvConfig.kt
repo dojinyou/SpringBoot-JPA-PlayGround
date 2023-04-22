@@ -5,6 +5,7 @@ import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
 import org.springframework.core.env.Environment
 import org.springframework.core.env.get
+import org.tinylog.kotlin.Logger
 import java.time.Duration
 
 @Configuration
@@ -13,6 +14,7 @@ class MyDataSourceEnvConfig(
 ) {
     @Bean
     fun myDataSource(): MyDataSource {
+        Logger.info(this.javaClass.simpleName)
         val url = environment["my.datasource.url"]
         val username = environment["my.datasource.username"]
         val password = environment["my.datasource.password"]

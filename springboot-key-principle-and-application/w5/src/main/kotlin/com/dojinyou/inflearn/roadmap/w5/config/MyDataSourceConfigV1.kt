@@ -4,6 +4,7 @@ import com.dojinyou.inflearn.roadmap.w5.datasource.MyDataSource
 import com.dojinyou.inflearn.roadmap.w5.datasource.MyDataSourcePropertiesV1
 import org.springframework.boot.context.properties.EnableConfigurationProperties
 import org.springframework.context.annotation.Bean
+import org.tinylog.kotlin.Logger
 
 @EnableConfigurationProperties(MyDataSourcePropertiesV1::class)
 class MyDataSourceConfigV1(
@@ -12,6 +13,7 @@ class MyDataSourceConfigV1(
 
     @Bean
     fun dataSource(): MyDataSource {
+        Logger.info(this.javaClass.simpleName)
         return MyDataSource(
             url = properties.url,
             username = properties.username,

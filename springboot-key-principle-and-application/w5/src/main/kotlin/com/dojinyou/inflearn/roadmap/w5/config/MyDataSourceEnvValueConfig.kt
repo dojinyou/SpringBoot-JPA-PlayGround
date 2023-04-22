@@ -4,8 +4,8 @@ import com.dojinyou.inflearn.roadmap.w5.datasource.MyDataSource
 import org.springframework.beans.factory.annotation.Value
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
+import org.tinylog.kotlin.Logger
 import java.time.Duration
-
 @Configuration
 class MyDataSourceEnvValueConfig(
     @Value("\${my.datasource.url}")
@@ -22,7 +22,10 @@ class MyDataSourceEnvValueConfig(
     private val options: List<String>,
 ) {
     @Bean
-    fun myDataSource1(): MyDataSource = MyDataSource(url, username, password, maxConnection, timeout, options)
+    fun myDataSource1(): MyDataSource {
+        Logger.info(this.javaClass.simpleName)
+        return MyDataSource(url, username, password, maxConnection, timeout, options)
+    }
 
     @Bean
     fun myDataSource2(
@@ -32,5 +35,8 @@ class MyDataSourceEnvValueConfig(
         @Value("\${my.datasource.max-connection:2}") maxConnection: Int,
         @Value("\${my.datasource.timeout}") timeout: Duration,
         @Value("\${my.datasource.options}") options: List<String>,
-    ): MyDataSource = MyDataSource(url, username, password, maxConnection, timeout, options)
+    ): MyDataSource {
+        Logger.info(this.javaClass.simpleName)
+        return MyDataSource(url, username, password, maxConnection, timeout, options)
+    }
 }
