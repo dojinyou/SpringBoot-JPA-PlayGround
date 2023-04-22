@@ -1,0 +1,37 @@
+my:
+  datasource:
+    url: 'local.db.com'
+    username: username
+    password: password
+    max-connection: 1
+    timeout: 3500ms
+    options: CACHE:ADMIN
+    v1:
+      url: local.db.com
+      username: username
+      password: password
+      etc:
+        max-connection: 1
+        timeout: 3500ms
+        options: CACHE,ADMIN
+    v2:
+      url: local.db.com
+      username: username
+      password: password
+      etc:
+        max-connection: 1
+        timeout: 3500ms
+        options: CACHE,ADMIN
+    v3:
+      url: local.db.com
+      username: username
+      password: password
+      etc:
+        max-connection: 1
+        timeout: 3500ms
+        options: CACHE,ADMIN
+---
+spring:
+  config:
+    activate:
+      on-profile: dev
