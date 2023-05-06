@@ -27,3 +27,8 @@ info:
 logging:
   level:
     com.dojinyou.inflearn.roadmap.w6: debug
+
+server:
+  tomcat:
+    mbeanregistry:
+      enabled: true
