@@ -1,0 +1,21 @@
+spring:
+  jpa:
+    open-in-view: true
+    generate-ddl: false
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        format_sql: true
+        show_sql: true
+  datasource:
+    hikari:
+      driver-class-name: org.postgresql.Driver
+      jdbc-url: jdbc:postgresql://localhost:35432/manytomany
+      username: test
+      password: test
+
+  web.resources.add-mappings: false
+  liquibase:
+    change-log: classpath:/db/changelog/changelog-master.yml
+    enabled: true

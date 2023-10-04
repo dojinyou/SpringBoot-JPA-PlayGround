@@ -10,4 +10,8 @@ class JpaConcurrencyApplicationTests {
   void contextLoads() {
   }
 
+  @Test
+  void test() {
+
+  }
 }

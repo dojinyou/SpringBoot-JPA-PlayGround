@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgis/postgis:14-3.2
+    container_name: m2m-db
+    volumes:
+      - postgres:/var/lib/postgresql/data
+    environment:
+      POSTGRES_DB: manytomany
+      POSTGRES_USER: test
+      POSTGRES_PASSWORD: test
+      TZ: Asia/Seoul
+      PGTZ: Asia/Seoul
+    ports:
+      - "35432:5432"
+
+volumes:
+  postgres:
